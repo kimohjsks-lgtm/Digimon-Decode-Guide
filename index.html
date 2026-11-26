@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Digimon World Re:Digitize Decode — Town Guide</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <h1>Digimon World Re:Digitize Decode</h1>
+      <span class="badge">3DS Decode</span>
+    </div>
+    <p class="tagline">Town recruits, sub-events &amp; secrets checklist</p>
+    <p class="progress" id="progressLabel">0 / 0 done</p>
+  </header>
+
+  <div class="toolbar" id="toolbar">
+    <div class="toolbar-row">
+      <div class="chips" role="group" aria-label="Type filter">
+        <button type="button" class="chip active" data-type="all">All</button>
+        <button type="button" class="chip" data-type="recruit">Recruits</button>
+        <button type="button" class="chip" data-type="event">Events</button>
+        <button type="button" class="chip" data-type="secret">Secrets</button>
+      </div>
+      <label class="search-wrap">
+        <span class="sr-only">Search</span>
+        <input type="search" id="searchInput" placeholder="Search name…" autocomplete="off" />
+      </label>
+    </div>
+    <div class="toolbar-row">
+      <label class="ctrl">
+        Group
+        <select id="groupSelect">
+          <option value="location">Location</option>
+          <option value="name">Name A–Z</option>
+        </select>
+      </label>
+      <label class="ctrl check">
+        <input type="checkbox" id="hideCompleted" />
+        Hide completed
+      </label>
+      <label class="ctrl check">
+        <input type="checkbox" id="hideUnavailable" />
+        Hide unavailable
+      </label>
+      <button type="button" class="btn danger" id="resetBtn">Reset progress</button>
+    </div>
+  </div>
+
+  <main id="listRoot" class="list-root" aria-live="polite"></main>
+
+  <footer class="site-footer">
+    <p>
+      Data paraphrased from GameFAQs guides:
+      <a href="https://gamefaqs.gamespot.com/3ds/705638-digimon-world-redigitize-decode/faqs/78992" target="_blank" rel="noopener">Charjake08 Sub-Event Guide</a>
+      &amp;
+      <a href="https://gamefaqs.gamespot.com/psp/637157-digimon-world-redigitize/faqs/74471" target="_blank" rel="noopener">Saphonax Walkthrough</a>.
+      Inspired by
+      <a href="https://fliegenfuerst.github.io/dw1/recruitment/" target="_blank" rel="noopener">DW1 Recruitment Helper</a>.
+    </p>
+    <p class="note">Names/options may differ slightly from your fan-translation. Save before risky NPC events.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
